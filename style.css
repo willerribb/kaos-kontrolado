@@ -6,8 +6,8 @@
 .font-haas-text { font-family: 'neue-haas-grotesk-text', sans-serif; font-weight: 400; font-style: normal; }
 
 .mask-fade-edges {
-    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
-    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 5%, black 95%, transparent);
 }
 
 .card-gradient-border {
@@ -16,6 +16,14 @@
 }
 
 .dj-card.is-expanded .card-gradient-border { border-color: rgba(252, 27, 170, 0.5); }
+
+.custom-scrollbar {
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: #FC1BAA #121212;
+}
+
+.text-wrapper { scrollbar-width: thin; scrollbar-color: #40072b #121212; }
 
 .custom-text-scroll::-webkit-scrollbar { width: 2px; }
 .custom-text-scroll::-webkit-scrollbar-track { background: transparent; }
@@ -27,3 +35,9 @@
 }
 .vertente-card.is-expanded { border-color: rgba(252, 27, 170, 0.5); }
 .vertente-card.is-expanded .expand-wrapper { grid-template-rows: 1fr; opacity: 1; }
+
+.refs {
+    background-color: #121212;
+    border-radius: 5px;
+    padding: 24px 16px;
+}
