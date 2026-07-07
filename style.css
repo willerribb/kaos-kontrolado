@@ -1,0 +1,29 @@
+@import url("https://use.typekit.net/fdj3azc.css");
+
+.font-haas-display { font-family: 'neue-haas-grotesk-display', sans-serif; font-weight: 700; font-style: normal; }
+.font-haas-roman { font-family: 'neue-haas-grotesk-display', sans-serif; font-weight: 500; font-style: normal; }
+.font-haas-medium { font-family: "neue-haas-grotesk-display", sans-serif; font-weight: 600; font-style: normal; }
+.font-haas-text { font-family: 'neue-haas-grotesk-text', sans-serif; font-weight: 400; font-style: normal; }
+
+.mask-fade-edges {
+    mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+    -webkit-mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+}
+
+.card-gradient-border {
+    background: linear-gradient(#121212, #121212) padding-box, linear-gradient(-37deg, rgba(255 246 250 / 0.2), rgba(74, 74, 74, 0.2)) border-box;
+    border: 1px solid transparent;
+}
+
+.dj-card.is-expanded .card-gradient-border { border-color: rgba(252, 27, 170, 0.5); }
+
+.custom-text-scroll::-webkit-scrollbar { width: 2px; }
+.custom-text-scroll::-webkit-scrollbar-track { background: transparent; }
+.custom-text-scroll::-webkit-scrollbar-thumb { background: transparent; border-radius: 3px; }
+.text-wrapper:hover::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.15); }
+
+.expand-wrapper {
+    transition: grid-template-rows 330ms cubic-bezier(0.25, 1, 0.5, 1), opacity 200ms ease;
+}
+.vertente-card.is-expanded { border-color: rgba(252, 27, 170, 0.5); }
+.vertente-card.is-expanded .expand-wrapper { grid-template-rows: 1fr; opacity: 1; }
